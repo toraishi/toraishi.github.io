@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en"><head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <link rel="shortcut icon" href="placeholder.ico" type="image/x-icon">
+  <link rel="icon" href="placeholder.ico" type="image/x-icon">
+  <meta name="author" content="haru">
+  <meta name="description" content="Idol Character Sorting">
+  <meta name="keywords" content="">
+  <meta name="generator" content="notepad"><title>Idol Sorter v0.86</title>  
+
+  <noscript></noscript><script type="text/javascript" src="src/mod_k-factory.js"></script>  
+  <script type="text/javascript" src="src/fnc_main_v4.js"></script>
+  <script type="text/javascript" src="src/fnc_data_v2.js"></script>
+  <link rel="stylesheet" type="text/css" href="src/tcs_style.css">
+  <style type="text/css">
+<!--
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+	font-size: 11px;
+}
+a:link {
+	color: #990000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+a:visited {
+	text-decoration: none;
+	color: #6600FF;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF6600;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:active {
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+  </style>
+  </head><body onLoad="startup()">
+  <div align="center" class="battle box">
+   <table id="progressTable">
+    <thead>
+     <tr>
+      <td colspan="3" class="tb_header">Battle No. <span id="lblCount">-</span><br>
+       <span id="lblProgress">0</span>% sorted.<br>
+       <div align="center"><span id="GaGprog"></span></div>
+      </td>
+     </tr>
+    </thead>
+   </table>
+   <table id="mainTable">
+    <tbody>
+     <tr>
+      <td id="fldLeft" class="idol" onClick="fnc_Sort(-1);" rowspan="2"><img src="aidoru/okamoto_miyu.jpg"></td>
+      <td id="fldMiddleT">
+		<div id="divMiddleT" onClick="fnc_Sort(0);">(?) Girls War</div></td>
+      <td id="fldRight" class="idol" onClick="fnc_Sort(1);" rowspan="2"><img src="aidoru/nanase_yoshino.jpg"></td>
+     </tr>
+     <tr>
+      <td id="fldMiddleB">
+		<div id="divMiddleB" onClick="fnc_Undo();">Music Start!</div>
+</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="3"><div align="center">
+        <input id="optImage" type="checkbox" checked></input>
+        <span class="tb_header">Display images while sorting
+        </span></div></td>
+     </tr>
+     <tr>
+      <td colspan="3"><div align="center">
+        <input id="optAgony" type="checkbox" checked></input>
+        <span class="tb_header"><span style="color:#ff0000;">Agony mode enabled</span> (disables ties and undos)
+        </span></div></td>
+     </tr>
+    </tfoot>
+   </table>
+  </div>
+  <br>
+   <table id="optTable" align="center" width="450"></table>
+  <br>
+  <div id="ranTable" width="640px" align="center" class="tb" style="display:none;">
+<div>
+<form>
+      <input type='button' value='Raw Text Results' onclick='OpenWnd()'>
+</form> 	
+</div>
+</div>
+  <div class="style4" id="resultField" style="text-align:center;">
+ 
+	
+	<p>code stolen shamelessly from <a href="https://kouhi.me/idol/">kouhi.me/idol</a></p>
+  </div></body>
+</html>
