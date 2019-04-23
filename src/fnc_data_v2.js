@@ -35,7 +35,7 @@ var ary_TitleData = [
 //   "キャラクター名", "画像（空白の場合、キャラクター名が使用されます）"
 //                                      [1,2,3,4,5,6,7,8,9,
 var ary_CharacterData = [
-   [0, "Nana Abe",	"CV. Marie Miyake",	[1,0], "<img src="nana abe.png">"],
+   [0, "Nana Abe",	"CV. Marie Miyake",	[1,0], "nana abe.png"],
    [0, "Karin Domyoji",	"CV. Hiyori Nitta",	[1,0], "https://user-images.githubusercontent.com/33990875/56613999-47a30a80-65ee-11e9-998d-5838adc574f2.png"],
    [0, "Rina Fujimoto",	"CV. Mayumi Kaneko",	[1,0], "https://user-images.githubusercontent.com/33990875/56614233-f7787800-65ee-11e9-974f-1d6187cd8044.png"],
    [0, "Anzu Futaba",	"CV. Hiromi Igarashi",	[1,0], "https://user-images.githubusercontent.com/33990875/56614852-5a1e4380-65f0-11e9-9e4c-9f7a44556d8b.png"],
