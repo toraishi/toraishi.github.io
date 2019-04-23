@@ -35,7 +35,7 @@ var ary_TitleData = [
 //   "キャラクター名", "画像（空白の場合、キャラクター名が使用されます）"
 //                                      [1,2,3,4,5,6,7,8,9,
 var ary_CharacterData = [
-   [0, "Nana Abe",	"CV. Marie Miyake",	[1,0], "x"],
+   [0, "Nana Abe",	"CV. Marie Miyake",	[1,0], "http://imas.gamedbs.jp/cg/image_sp/card/l/8569f522a0287b4b1f4032225795aaf7.jpg"],
    [0, "Karin Domyoji",	"CV. Hiyori Nitta",	[1,0], "x"],
    [0, "Rina Fujimoto",	"CV. Mayumi Kaneko",	[1,0], "x"],
    [0, "Anzu Futaba",	"CV. Hiromi Igarashi",	[1,0], "x"],
